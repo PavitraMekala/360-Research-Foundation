@@ -1,0 +1,347 @@
+<html>
+<head>
+<title>360rf</title>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<style>
+    *{
+        box-sizing:border-box;
+        margin:0;
+        padding: 0;
+        color: #222020;
+        font-family: 'poppins',sans-serif;
+        
+    }
+    body{
+        margin:0;
+        background:white;
+    }
+    .menu{
+        background: white;
+        text-align: center;
+    }
+    .menu ul{
+        display:inline-flex;
+        list-style: none;
+        color: #1c181d;
+    }
+    .menu ul li{
+        width:100px;
+        margin:10px;
+        padding:10px;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    .active, .menu ul li:hover{
+        background: rgba(198, 223, 198);
+        border-radius:3px;
+    }
+
+    .submenu{
+        display: none;
+        
+        
+    }
+    .menu ul li:hover .submenu{
+        display: block;
+        position: absolute;
+        background:rgb(198, 223, 198);
+        margin-top: 15px;
+        margin-left: -15px;
+        
+    }
+    .menu ul li:hover .submenu ul{
+        display: block;
+        margin: 10px;
+       
+    }
+    .menu ul li:hover .submenu ul li{
+        width: 150px;
+        padding: 10px;
+        border-bottom: 1px dotted black;
+        background: transparent;
+        border-radius: 0;
+        text-align: center ;
+    }
+    .menu ul li:hover .submenu ul li:last-child{
+        border-bottom: none;
+    }
+    .menu ul li:hover .submenu ul li a:hover{
+        color:black
+    }
+    main{
+        width:90%; margin: auto;
+        border:1px ; 
+        display: grid; color:white;
+        grid-template-rows: 60px 220px 200px 95px;
+        grid-template-columns: repeat(3,1fr) 150px;
+        grid-gap:20px;
+        text-align: left;
+        
+        
+    }
+    .div1{
+        background-color:  aliceblue;
+        text-align: center;
+        grid-column:1/-1;
+    }
+    .div2{background-color: rgb(219, 245, 219);}
+    .div3{background-color: rgb(247, 210, 210);}
+    .div4{background-color: rgb(199, 206, 247);}
+    .div5{background-color: seashell;
+     grid-row:2/4; grid-column: 4/5;
+    }
+    .div6{background-color: rgb(241, 210, 240);
+                grid-column:1/4;
+    }
+    .div7{background-color: aliceblue;
+                grid-column: 1 / -1;
+    }
+    #page-container{
+        position: relative;
+        min-height:100vh;
+    }
+    #content-wrap{
+        padding-bottom: 2.5rem;
+    }
+    #footer{
+        position: absolute;
+        bottom: 0;
+        bottom: 0px;
+        width:100%;
+        height:47%;
+        background:rgb(46, 179, 90,.2);
+        color: honeydew;
+    }
+    .main-content{
+        display: flex;
+
+    }
+    .main-content .box{
+        flex-basis:50%;
+        padding: 10px 20px;
+    }
+    .box h2{
+        font-size:1.125rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .box .content{
+        margin: 20px 0 0 0;
+    }
+    .left .content p{
+        text-align: justify;
+    }
+    .center.content .social {
+        margin: 20px 0 0 0;
+        text-align: justify;
+    }
+    .center .content .social a{
+        padding:0 2px;
+    }
+    .center .content .social a span{
+        height: 40px;
+        width: 40px;
+        background: #ebdede;
+        line-height: 40px;
+        text-align:center;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    .center .content .social a span:hover{
+        background:#f39d6b;
+    }
+    img{
+        padding: 12px;
+    }
+    .outer-footer{
+        padding:10px;
+        text-align: center;
+        color:black;
+        font-size: 20px;
+        
+    }
+
+</style>
+</head>
+<body>
+<img src="mainpagepic.jpg" width =100% height="25%">
+<nav class="menu">
+    <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About </a>
+            <div class="submenu">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Mission & vission</a></li>
+                    <li><a href="#">Why to choose 360 ?</a></li>
+                    <li><a href="#">About Foundation</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Body</a>
+            <div class="submenu">
+                <ul>
+                    <li><a href="#">General</a></li>
+                    <li><a href="#">Governing</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Departments</a>
+            <div class="submenu">
+                <ul>
+                    <li><a href="#">Agriculture</a></li>
+                    <li><a href="#">Data Management and Analysis</a></li>
+                    <li><a href="#">Development Goals</a></li>
+                    <li><a href="#">Energy</a></li>
+                    <li><a href="#">Finance Resources</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Industries</a></li>
+                    <li><a href="#">Project Management</a></li>
+                    <li><a href="#">Partnership</a></li>
+                    <li><a href="#">Science & Technology</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Institutions</a>
+            <div class="submenu">
+                <ul>
+                    <li><a href="#">First Aid</a></li>
+                    <li><a href="#">Team A</a></li>
+                    <li><a href="#">360 Research & Innovation Group</a></li>
+                    <li><a href="#">The KRAFT LADY</a></li>
+                    <li><a href="#">The Life Savers</a></li>
+                    <li><a href="#">Master English Classes</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Membership</a>
+            <div class="submenu">
+                <ul>
+                    <li><a href="#">Join Us </a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</nav>
+<br>
+
+<h1 align="center">Welcome to our website</h1>
+<br>
+<img src="Goals.gif" width=50% height=50% style="display: block; margin-left:auto; margin-right: auto;" >
+<br>
+<h2 align="center"><b>360RF helps research, innovation and creative minds in the field if empowerment and livelihood.</b></h2>
+<br>
+<br>
+<br>
+<p> <b>The 360 Research Foundation (360RF)</b> is a National level initiative to promote and facilitate the grassroots researches and technological innovations with collaborative and interdisciplinary research and enhancement of research networking capacity and infrastructure. Its mission is to help researchers, innovators and creative minds in the field if empowerment and livelihood. 360 RF scouts, supports, educates, provides training in research and related skills and spawns’ researches and innovations developed by individuals, local team and communities in any field, helping in human survival and scientific research. 360  has proved that grassroots innovators can match anyone in the world when it comes to solving problems creatively. They perform better than others in generating greater sustainable alternatives by using local resources frugally. Those who see poor only as the consumers of cheap goods, miss the richness of knowledge at grassroots level and their potential as provider of ideas and innovations.</p>
+<br>
+<br>
+<img src="download.jpg"  width=30% height=26%>
+<img src="cola2.jpg" >
+<img src="cola.jpg" width=30% height=26%>
+
+<br>
+<br>
+<br>
+<br>
+<h3>Agriculture department</h3>
+<br>
+<p>Agricultural can be broadly defined as any research activity aimed at improving productivity and quality of crops by their genetic improvement, better plant protection, irrigation, storage methods, farm mechanization, efficient marketing, and a better management of resources.The Department of Agriculture (DA) at 360 Research Foundation works to develop plans and policies for the development of agriculture, animal husbandry, dairy, fisheries, agricultural land policies and food processing for famers’ welfare. It works in close coordination with the agriculture departments of national and state partners as well as regional.</p>
+<br>
+<br>
+<br>
+<img src="agri.jpg">
+<img src="agri1.jpg">
+<img src="agri2.jpg" height=24% >
+<br>
+<br>
+<br>
+<br>
+<main>
+    <div class="div1"><h2 >OUR ACTIVITIES</h2></div>
+    <div class="div2"><h3 >Internship</h3><br><p style="writing-mode: horizontal-tb">Students from IITs, NITs and top National Universities are doing Internship in different fields.</p></div>
+    <div class="div3"><h3 >Campus Activity</h3><br><p>We conduct campus activities like science exhibitions, motivational programmes, quiz in different schools, and other institutions to support personality development.  </p></div>
+    <div class="div4"><h3 >Internship Offer</h3><br><p>Get Internship & Training opportunity at one of the fastest growing organisation in India. </p></div>
+    <div class="div5"><h3>Health Camp</h3><br><p>Currently 15 to 20 health workers in each village Teams are reaching and checking the health of people above 40 years of age. In this test, Blood Pressure, Pulse Rate, Oxygen Label, Heart Beat, Body Temperature, Weight, Height etc. are being tested for free.</p></div>
+    <div class="div6"><h3>Grassroots Innovations</h3><br><p>Beyond the boundaries of formal institutions, a large number of individuals in the informal sector have been engaged in innovative technological pursuits of their own. 360 R.F. has been earnestly scouting and documenting such technological ideas and innovations of the people at the grassroots and school students from all parts of the India.</p></div>
+    <div class="div7"><h3>I-CAN News</h3><br><p>I-CAN (India Co-Win Action Network) is an initiative by Atal Incubation Centre- Rambhau Mhalgi Prabodhini (AIC-RMP) in collaboration with Connecting Dreams Foundation (CDF) to help underprivileged communities that have been hardest hit due COVID-19.</p></div>
+</main>
+<br><br>
+<img src="images.jpg" height=29%>
+<img src="download (1).jpg">
+<img src="download (2).jpg" height=29%>
+<img src="dow.jpg" height=29%>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3>RESEARCH & INNOVATION</h3><br>
+<p> Engaging in research, innovation, and development is the hallmark of a great research Institution. Through participation in research and creative endeavors, individuals become better thinkers, innovators, and problem solvers, cultivating a depth of understanding needed to make a positive difference in the world.Research and Development plays a critical role in the innovation process. It's essentially an investment in technology and future capabilities which is transformed into new products, processes, and services.</p><br>
+<img src="internship.jpg" width=50% height="50%" style="display: block; margin-left:auto; margin-right: auto;"><br><br>
+<p><br><b>Fist Aid: </b><br>The First Aid (FA) is an initiative of 360 Research Foundation for the purpose of providing primary healthcare consultation and First Aid services at village/ward level.The First Aid functions as the primary health center and offers outpatient consultation services with a small pharmacy with general medicines prescribed by the doctor. Apart from this, the First Aid conducts regular health talks and consultation by various specialists with the help of 360 Research Foundation.<br><br><b>360 RIG:</b><br> 360 Research and Innovation Group (360RIG), is the constituent unit of 360 Research Foundation, working in the field of Scientific Research and Innovation.360RIG helps innovators and outstanding traditional knowledge holders get due recognition, respect and reward for their innovations. These socially-relevant solutions help us, our communities and our nation.<br>
+<br>
+<img src="imag.png " width="20%" heigh=20%>
+<br>
+<br><b>The Life Savers: </b><br>The Life Savers (TLS)is an initiative supported by 360 Research Foundation to save the lives by donating blood directly to the needy people.The Life Savers donates blood not to store/ sell; all have a plan to help needy people who cannot buy the blood from other sources. The Life savers is a group of people ready to donate blood, generally we have members from all blood groups. <br><br><b>Master English Classes(MEC): </b><br>Master English Classes (MEC) is the constituent unit of 360 Research Foundation. This is a charitable organization working with an aim to bring solace to the needy.  MEC works for the betterment of women and children. Free coaching classes provided by us have helped students to gain confidence in facing exams and society.<br><br><b>Gurkul Coaching center:</b> <br>Gurukul Coaching Center is an innovative initiative of 360 Research Foundation to educate those children who have left behind in this very competitive era. India has the second largest education in the world. The scale of operation involved to ensure the quality of Education for India is challenging because in a rural part of India teacher have to face many difficulties to teach. This is why Gurukul Coaching Center was established to promote rural education. </p>
+<br><br>
+<h2 align="center">Departments</h2>
+<p align="center">Engaging in research, innovation, and development is the hallmark</p>
+<div id="page-container">
+    <div id="content-wrap">
+        <!--all other page content-->
+    </div>
+
+<footer id="footer">
+    <div class="main-content">
+        <div class="left box">
+            <div class="content">
+                <img src="360rf.png"width="100px" height="100px">
+                <p>The 360 Research Foundation is a National level initiative to promote the grassroots researches and technological innovations with collaborative and enhancement of research networking capacity.</p>
+
+            </div>
+        </div>
+        <div class="center box">
+            <h2>Social Media</h2>
+            <div class="content">
+                <div class="social">
+                    <a href="#"><span class="fab fa-facebook-f" ></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="#"><span class="fab fa-instagram"></span></a>
+                    <a href="#"><span class="fab fa-youtube"></span></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right box">
+            <h2>Contact Us</h2>
+            <div class="content">
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+919848232754</span>
+                </div>
+                <br>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">contact@360rf.in</span>
+                </div>
+                <br>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">hod@360rf.in</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div align="center" class="outer-footer">
+        Copyright &copy; All Right Reserved
+    </div>
+</footer>
+</div>
+</body>
+</html>
